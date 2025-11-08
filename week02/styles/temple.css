@@ -1,0 +1,35 @@
+header, footer {
+    color: #333;
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+main {
+    width: 400px;
+    margin: 0 auto;
+}
+h1 {
+    margin: 10px 0;
+    text-align: center;
+}
+h2 {
+    border-bottom: 1px solid #334;
+    color: #334;
+    margin: 10px 0;
+}
+img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 30px #333;
+}
+section {
+    margin: 20px 0;
+    border: 1px solid rgba(51, 52, 53, 0.1);
+    padding: 10px;
+    background-color: #abe;
+    font-size: .9rem;
+}
+section p {
+    margin: 10px 0;
+}
