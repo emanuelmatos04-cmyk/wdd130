@@ -4,6 +4,7 @@ h1 {
 
 main {
   max-width: 840px;
+  margin: 0 auto;
 }
 
 p {
@@ -23,6 +24,8 @@ aside {
 nav {
   background-color: #333;
   padding: 10px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 aside img {
@@ -34,15 +37,17 @@ aside img {
 nav a {
   color: white;
   padding: 10px 15px;
-  display: block;
+  text-decoration: none;
 }
 
 main img {
   width: 150px;
   height: auto;
   border: #000 solid 2px;
-  padding: auto;
+  padding: 10px; 
   box-shadow: 0 0 15px #333;
+  display: block; 
+  margin: 0 auto; 
 }
 
 footer {
