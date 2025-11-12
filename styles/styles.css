@@ -41,7 +41,7 @@ main img {
   width: 150px;
   height: auto;
   border: #000 solid 2px;
-  padding: 5px;
+  padding: 0px;
   box-shadow: 0 0 15px #333;
 }
 
