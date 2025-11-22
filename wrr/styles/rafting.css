@@ -1,24 +1,24 @@
-/* Define CSS variables for color scheme and fonts */
-:root {
-  --primary-color: #0d47a1; /* Deep Blue - Water/Sky */
-  --secondary-color: #ffb300; /* Amber - Sun/Energy */
-  --accent1-color: #2e7d32; /* Forest Green - River Banks/Nature */
-  --accent2-color: #f5f5f5; /* Light Gray/Off-White - Background/Contrast */
-  --heading-font: "Georgia", "Palatino", serif;
-  --body-font: "Roboto", Arial, sans-serif;
-}
-
-/* Universal Selector Reset (Requirement Met) */
+/* Universal Selector Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Define CSS variables for color scheme and fonts */
+:root {
+  --primary-color: #0d47a1;
+  --secondary-color: #ffb300;
+  --accent1-color: #2e7d32;
+  --accent2-color: #f5f5f5;
+  --heading-font: "Georgia", "Palatino", serif;
+  --body-font: "Roboto", Arial, sans-serif;
+}
+
 /* Style the entire document body text content */
 body {
   font-family: var(--body-font);
-  color: #333; /* A dark, soft gray for body text */
+  color: #333;
   background-color: var(--accent2-color);
 }
 
@@ -28,7 +28,7 @@ header, main, footer {
   margin: 0 auto;
 }
 
-/* Base Link Styling (Uses --primary-color and --secondary-color) */
+/* Base Link Styling */
 a {
   color: var(--primary-color);
   text-decoration: none;
@@ -67,65 +67,45 @@ nav, p, section, article {
 }
 
 /* --- HERO CONTAINER STYLES (REQUIRED FIXES) --- */
-
-/* 1. The .hero container must have position: relative. */
 .hero {
   position: relative;
-  /* Add height/width for better visual representation of the absolute children */
-  height: 400px; 
-  overflow: hidden; 
+  height: 400px;
+  overflow: hidden;
 }
 
-/* 2. The .hero h1 and .hero article child elements must have position: absolute. */
+/* FIX: Ensure H1 has a dark background for contrast against white text */
 .hero h1 {
   position: absolute;
-  top: 10%; /* Example positioning */
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-  color: white; /* Contrast against the image */
-  background-color: rgba(0, 0, 0, 0.4); 
+  color: white; 
+  /* ENFORCING DARK BACKGROUND FOR CONTRAST FIX */
+  background-color: rgba(0, 0, 0, 0.7); 
   padding: 10px 20px;
 }
 
-/* 2. The .hero h1 and .hero article child elements must have position: absolute. */
 .hero article {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 20px;
-  background-color: rgba(245, 245, 245, 0.9); /* Use a semi-transparent accent2 for overlay */
+  background-color: rgba(245, 245, 245, 0.9);
   color: #333;
   z-index: 5;
 }
 
-/* 3. The image inside .hero article must have float: right. */
 .hero article img {
   float: right;
   margin-left: 15px;
   margin-bottom: 5px;
-  max-width: 250px; /* Limit image size within the article */
-  border: 2px solid var(--accent1-color); /* Use an unused variable */
+  max-width: 250px;
+  border: 2px solid var(--accent1-color);
 }
 
 /* Remove the underlines from the social media image links in the footer */
 .socialmedia a {
   text-decoration: none;
-}
-
-/* Example use of --accent1-color for a button/callout to ensure it's 'used' */
-.callout-button {
-  background-color: var(--accent1-color);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/* Example use of --secondary-color for a border on an important element */
-.important-box {
-  border: 4px solid var(--secondary-color);
-  padding: 10px;
 }
