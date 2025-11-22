@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
 /* Define CSS variables for color scheme and fonts */
 :root {
@@ -73,14 +73,13 @@ nav, p, section, article {
   overflow: hidden;
 }
 
-/* FIX: Changed color to primary-color to meet contrast ratio requirement */
 .hero h1 {
   position: absolute;
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-  color: var(--primary-color); /* The fix for 1.09:1 ratio */
+  color: var(--primary-color);
   background-color: transparent; 
   padding: 10px 20px;
 }
