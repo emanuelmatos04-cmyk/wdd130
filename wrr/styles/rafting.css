@@ -1,9 +1,9 @@
-/* Universal Selector Reset (REQUIRED FIX) */
+/* Universal Selector Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} *
+} 
 
 /* Define CSS variables for color scheme and fonts */
 :root {
