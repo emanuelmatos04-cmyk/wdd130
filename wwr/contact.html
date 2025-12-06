@@ -113,15 +113,27 @@
                 <input type="email" id="email" name="email" required>
 
                 <p><strong>Purpose of Message:</strong></p>
-                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                <label for="purpose-general">
+                    <input type="radio" id="purpose-general" name="purpose" value="general" required>
+                    General Inquiry
+                </label><br>
+
+                <label for="purpose-reservation">
+                    <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                    Reservation Question
+                </label><br>
+
+                <label for="purpose-suggestion">
+                    <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                    Website Suggestion
+                </label>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label>
-                    <input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Please subscribe me to the monthly newsletter
                 </label>
 
                 <button type="submit">Send Message</button>
@@ -146,3 +158,4 @@
     </footer>
 </body>
 </html>
+
